@@ -6,14 +6,15 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
-  min-width: 375px;
+  min-width: 435px;
 }
 .container {
-  max-width: 1076px;
-  min-width: 375px;
+  max-width: 1380px;
+  min-width: 435px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
