@@ -1,0 +1,28 @@
+.information {
+    margin-top: 126px;
+    margin-bottom: 30px;
+    &__text {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 159px;
+    }
+    &__link {
+        display: block;
+        text-align: center;
+        
+    }
+}
+@media screen and (min-width:768px) {
+    .information {
+    margin-top: 274px;
+    
+        &__text {
+            margin-bottom: 417px;
+            
+        }
+}
+    
+}
