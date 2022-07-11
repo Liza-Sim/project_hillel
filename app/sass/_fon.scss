@@ -23,7 +23,6 @@
         right: 40px;
         bottom: -20px;
     }
-    
     &__img {
     background-image: url(../img/h.svg);
     background-position-x: center ;
@@ -31,34 +30,24 @@
     height: 600px;
     background-size: cover;
     background-position: center top;
-}
-    
-}
-.fon-header {
-    background-color: rgba($color: #F5F5FA, $alpha: 0.2);
-    margin: 0 -15px;
-}
-@media screen and (min-width:768px) {
-    .fon-header {
-        background-color: transparent;
-        margin: 0;
-    }   
-    .fon {
-        &__img {
-    
-    height: 1024px;
-    background-size: cover;
-    background-position: center top;
+}}
+@media screen and (min-width:708px) {
+.fon {
+    &__img {
+        height: 1024px;
     }
-}
-@media screen and (min-width:904px) {
-
-
-}
+}}
+@media screen and (min-width:850px) {
+.fon {
+    &__img {
+        height: 768px;
+        background-size: 69.5%;
+    }
+}}
 @media screen and (min-width:992px) {
-    .fon {
-        &__img {
-    background-size: 48.5%;
-    height: 799px;}
-}
+.fon {
+    &__img {
+    background-size: 51%;
+    height: 799px;
+    }
 }}

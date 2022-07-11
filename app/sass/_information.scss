@@ -13,16 +13,25 @@
         display: block;
         text-align: center;
         
-    }
-}
-@media screen and (min-width:768px) {
-    .information {
+    }}
+@media screen and (min-width:708px) {
+.information {
     margin-top: 274px;
-    
-        &__text {
-            margin-bottom: 417px;
+    &__text {
+        margin-bottom: 417px;
             
-        }
-}
-    
-}
+    }
+}}
+@media screen and (min-width:850px){
+.information {
+    margin-top: 245px;
+    &__text {
+        margin-bottom: 289px;}
+    }}
+@media screen and (min-width:992px) {
+.information {
+    margin-top: 261px;
+    &__text {
+        margin-bottom: 304px
+    }
+    }}

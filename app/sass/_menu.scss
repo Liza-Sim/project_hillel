@@ -7,13 +7,10 @@
         margin-bottom: 15px;
         -ms-overflow-style: none;
         scrollbar-width: none;
-       
-      
       &::-webkit-scrollbar {
         width: 0;
         background: transparent;
       }
-      
         &__btn {
             font-weight: 700;
             font-size: 32px;
@@ -32,7 +29,7 @@
         }
     }
     &-information {
-         border-top: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid rgba(255, 255, 255, 0.3);
         padding: 30px 0;
         &__title {
             font-weight: 700;
@@ -47,29 +44,71 @@
             line-height: 30px;
             color: #FFFFFF;
         }
-    }
-}
-@media screen and (min-width:768px) {
-    .menu {
-        margin: 0 30px;
-        &-nav {
-            margin-right: -60px;
-            padding-top: 60px;
-            padding-bottom: 45px;
-            &__btn {
-                font-size: 41px;
-                line-height: 46px;
-
-            }
-
-        }
-        &-information {
-
-            &__title {
-                font-size: 30px;
-                line-height: 37px;
-            }
+}}
+@media screen and (min-width:708px) {
+.menu {
+    &-nav {
+        margin-right: -30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &__btn {
+            font-size: 41px;
+            line-height: 46px;
         }
     }
-}
+    &-information {
+        padding: 60px 0;
+        &__title {
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+}}
+@media screen and (min-width:850px) {
+.menu {
+    display: flex;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    &-nav {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 60px;
+        margin: 0;
+        padding-top: 19px;
+        padding-bottom: 0;
+        &__btn {
+            margin: 0;
+            margin-bottom: 30px;
+            &:last-child {
+            margin-bottom: 15px;
+        }}
+    }
+    &-information {
+        width: 52%;
+        padding-left: 60px;
+        border-left: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: none;
+        padding-bottom: 0;
+        padding-top: 13px;
+    }
+}}
+@media screen and (min-width:992px) {
+.menu {
+    &-nav {
+        width: 42%;
+        &__btn {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+    &-information {
+        width: 58%;
+        padding-top: 46px;
+        &__text {
+            width: 83%;
+        }
+    }
+}}
 
