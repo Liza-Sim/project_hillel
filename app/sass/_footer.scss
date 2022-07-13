@@ -1,0 +1,54 @@
+.footer {
+    &--fon {
+    background-color: $greyfon;
+    }
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    &__address {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $darkblue;
+        padding-top: 30px;
+        border-top: 2px solid $border;
+    }
+    &__map {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $blue;
+        margin-top: 10px;
+        margin-bottom: 21px;
+        text-decoration: none;
+    }
+    &__fb {
+        margin-bottom: 7px;
+    }
+    &__tel {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $tell;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+    &__mail {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $blue;
+        text-decoration: none;
+        margin-bottom: 30px;
+    }
+    &__auth {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: $date;
+        text-transform: uppercase;
+    }
+}

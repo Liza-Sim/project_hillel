@@ -1,0 +1,58 @@
+.company {
+    margin: 0 -30px;
+    &__title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $darkblue;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    &-logo {
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--01 {
+            background-color: $logo01;
+        }
+        &--02 {
+            background-color: $logo02;
+        }
+        &--03 {
+            background-color: $logo03;
+        }
+        &--04 {
+            background-color: $logo04;
+        }
+        &--05 {
+            background-color: $logo05;
+        }
+        &--06 {
+            background-color: $logo06;
+        }
+        &--07 {
+            background-color: $logo07;
+        }
+        &--08 {
+            background-color: $logo08;
+        }
+        &--09 {
+            background-color: $logo09;
+        }
+        &--10 {
+            background-color: $logo10;
+        }
+        &--11 {
+            background-color: $logo11;
+        }
+        &--12 {
+            background-color: $logo12;
+        }
+        &--mobile {
+            display: none;
+        }
+    }
+}

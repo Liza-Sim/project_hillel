@@ -1,0 +1,82 @@
+.command {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px 12px 0 0;
+    margin-top: 50px;
+    &__img {
+        background-color: $grey;
+        object-fit: cover;
+        height: 500px;
+        border-radius: 12px 12px 0 0;
+    }
+    &-information {
+        background-color: $grey;
+        padding: 29px 30px 30px;
+        border-radius: 0 0 12px 12px;
+        &__link {
+        text-transform: uppercase;
+        color: $blue;
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        }
+        &__text {
+            font-weight: 700;
+            font-size: 31px;
+            line-height: 37px;
+            background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-bottom: 30px;
+            padding-top: 4px;
+            word-wrap: break-word;
+        }
+        &__name {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #B3B3BA;
+            margin-bottom: 6px;
+        }
+        &__position {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #B3B3BA;
+        }
+    }
+    &-slider {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        &__circle {
+            border-radius: 50%;
+            background-color: rgba($color: $blue, $alpha: 0.2);
+            width: 16px;
+            height: 16px;
+            margin: 0 7.5px;
+
+        }
+
+    }
+}
+
+@media screen and (min-width:708px) {
+    .command {
+    margin-top: 77px;
+    object-fit: cover;
+        &-information {
+            &__text {
+                font-size: 39px;
+                line-height: 46px;
+            }
+
+}}}
+@media screen and (min-width:850px) {
+    
+}
