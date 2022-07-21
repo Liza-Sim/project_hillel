@@ -29,7 +29,7 @@
                         </a>
                     </div>
                     <div class="header-logo">
-                        <a href="#"><img class="header-logo__img" src="./img/logo.svg" alt="Логотип"></a>
+                        <a href="./index.html"><img class="header-logo__img" src="./img/logo.svg" alt="Логотип"></a>
                     </div>
                     <div class="header-menu">
                         <button class="header-menu__btn button" type="button">
@@ -40,7 +40,7 @@
                             </svg>
                         </button>
                         <ul class="header-menu__list">
-                            <li><a href="#">about us</a></li>
+                            <li><a href="./about.html">about us</a></li>
                             <li><a href="#">services</a></li>
                             <li><a href="#">team</a></li>
                             <li><a href="#">publications</a></li>
@@ -364,7 +364,6 @@
                     legal department or not?
                 </p>
             </div>
-
         </div>
     </div>
     <main>
@@ -383,7 +382,7 @@
                 <div class="command-slider__circle"></div>
             </div>
         </section>
-        <section class="company container">
+        <section class="container-lg company">
             <h2 class="company__title">They already trust us</h2>
             <div class="company-logo company-logo--01">
                 <img src="./img/hillel.png" alt="Логотип">
@@ -423,40 +422,45 @@
             </div>
 
         </section>
-        <section class="publications">
+        <section class="publications--fon">
             <div class="container">
-                <a class="publications__link" href="#">Publications
-                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
-                    </svg>
-                </a>
-                <h2 class="publications__title">We have <br> something to tell</h2>
-                <div class="publications-box">
-                    <a href="#">
-                        <img class="publications-box__img img-responsive" src="./img/publication1.jpg" alt="Рисунок">
-                        <h3 class="publications-box__title">Equity associate</h3>
+                <div class="publications">
+                    <a class="publications__link" href="#">Publications
+                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
+                        </svg>
                     </a>
-                    <p class="publications-box__date">April 22</p>
-                    <p class="publications-box__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
-                </div>
-                <div class="publications-box">
-                    <a href="#">
-                        <img class="publications-box__img img-responsive" src="./img/publication2.jpg" alt="Рисунок">
-                        <h3 class="publications-box__title">Penalty for the Good Corporation: what will happen to Google and others for
-                            violating the GDPR</h3>
-                    </a>
-                    <p class="publications-box__date">September 29</p>
-                    <p class="publications-box__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National
-                    Commission for Data Protection.</p>
-                </div>
-                <div class="publications-box">
-                    <a href="#">
-                        <img class="publications-box__img img-responsive" src="./img/publication3.jpg" alt="Рисунок">
-                        <h3 class="publications-box__title">Millennial Testament</h3>
-                    </a>
-                    <p class="publications-box__date">August 19</p>
-                    <p class="publications-box__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian
-                    generation X looks like this: an apartment in…</p>
+                    <h2 class="publications__title">We have something to tell</h2>
+                    <div class="publications-box">
+                        <a href="#">
+                            <img class="publications-box__img img-responsive" src="./img/publication1.jpg" alt="Рисунок">
+                            <h3 class="publications-box__title">Equity associate</h3>
+                        </a>
+                        <p class="publications-box__date">April 22</p>
+                        <p class="publications-box__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before
+                            entering my parents told me that if I…</p>
+                    </div>
+                    <div class="publications-box">
+                        <a href="#">
+                            <img class="publications-box__img img-responsive" src="./img/publication2.jpg" alt="Рисунок">
+                            <h3 class="publications-box__title">Penalty for the Good Corporation: what will happen to Google and others for
+                                violating the GDPR</h3>
+                        </a>
+                        <p class="publications-box__date">September 29</p>
+                        <p class="publications-box__text">And why the recovery of 50 million euros could be a fateful precedent According to
+                            Mind.ua January 21 National
+                            Commission for Data Protection.</p>
+                    </div>
+                    <div class="publications-box publications--box3">
+                        <a href="#">
+                            <img class="publications-box__img img-responsive publications-box--img3" src="./img/publication3.jpg" alt="Рисунок">
+                            <h3 class="publications-box__title">Millennial Testament</h3>
+                        </a>
+                        <p class="publications-box__date">August 19</p>
+                        <p class="publications-box__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit
+                            A typical legacy of the Ukrainian
+                            generation X looks like this: an apartment in…</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -464,17 +468,22 @@
     <footer class="footer--fon">
         <div class="container">
             <div class="footer">
-                <p class="footer__address">Kyiv, Mechnikova str., 14/1</p>
-                <a class="footer__map" href="#">On map</a>
-                <a class="footer__fb" href="#">
-                    <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
-                            fill="#24A3FF" />
-                    </svg>
-                </a>
-                <a class="footer__tel" href="tel:+380800211927">0800 211 927</a>
-                <a class="footer__mail" href="mail:contact@forstudy.space">contact@forstudy.space</a>
+                <div class="footer-top">
+                    <p class="footer-top__address">Kyiv, Mechnikova str., 14/1</p>
+                    <a class="footer-top__map" href="#">On map</a>
+                    <p class="footer-top__auth">© 2021 hlegal law company, llc</p>
+                </div>
+                <div class="footer-bottom">
+                    <a class="footer-bottom__fb" href="#">
+                        <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
+                                fill="#24A3FF" />
+                        </svg>
+                    </a>
+                    <a class="footer-bottom__tel" href="tel:+380800211927">0800 211 927</a>
+                    <a class="footer-bottom__mail" href="mail:contact@forstudy.space">contact@forstudy.space</a>
+                </div>
                 <p class="footer__auth">© 2021 hlegal law company, llc</p>
             </div>
         </div>

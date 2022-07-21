@@ -1,0 +1,109 @@
+.achievements {
+    background-color: $greyfon;
+    padding-top: 30px;
+    
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $darkblue;
+    }
+    &-boxes {
+        margin: 30px;
+        
+        &__box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+            background: #FFFFFF;
+            border-radius: 12px;
+        }
+        &--desctop {
+            display: none;
+        }
+
+    }
+    &-slider {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        border-bottom: 2px solid $border;
+        padding-bottom: 30px;
+        &__circle {
+            border-radius: 50%;
+            background-color: rgba($color: $blue, $alpha: 0.2);
+            width: 16px;
+            height: 16px;
+            margin: 0 7.5px;
+
+        }
+    }
+}
+
+@media screen and (min-width:708px) {
+    .achievements {
+        &-boxes {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-column-gap: 40px;
+            margin-left: 0;
+            margin-right: 0;
+            &__box {
+                width: 132px;
+            }
+            
+            &--desctop {
+                display: flex;
+            }
+        }
+        &-slider {
+            &--desctop {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width:850px) {
+    .achievements {
+        &-boxes {
+            
+            &__box {
+                width: 196px;
+                height: 110px;
+            }
+            &--box1 {
+                width: 80px;
+                height: 60px;
+            }
+            &--box2 {
+                width: 159px;
+                height: 60px;
+            }
+            &--box3 {
+                width: 195px;
+                height: 60px;
+            }
+            &--box4 {
+                width: 166px;
+                height: 60px;
+            }
+
+    }
+}}
+@media screen and (min-width:992px) {
+    .achievements {
+        &__title {
+            font-size: 13px;
+        }
+        &-boxes {
+            &__box {
+                width: 300px;
+            }
+        }
+    }
+}

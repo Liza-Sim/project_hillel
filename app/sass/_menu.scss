@@ -67,7 +67,7 @@
 @media screen and (min-width:850px) {
 .menu {
     display: flex;
-    padding-top: 60px;
+    padding-top: 58px;
     margin-bottom: 60px;
     &-nav {
         width: 48%;
@@ -76,7 +76,7 @@
         align-items: flex-end;
         padding-right: 60px;
         margin: 0;
-        padding-top: 19px;
+        padding-top: 16px;
         padding-bottom: 0;
         &__btn {
             margin: 0;
@@ -91,15 +91,17 @@
         border-left: 4px solid rgba(255, 255, 255, 0.3);
         border-top: none;
         padding-bottom: 0;
-        padding-top: 13px;
+        padding-top: 10px;
     }
 }}
 @media screen and (min-width:992px) {
 .menu {
+    margin-bottom: 58px;
     &-nav {
         width: 42%;
+        padding-top: 20px;
         &__btn {
-            font-size: 38px;
+            font-size: 42px;
             line-height: 46px;
         }
     }

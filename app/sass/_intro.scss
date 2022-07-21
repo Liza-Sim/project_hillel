@@ -1,0 +1,199 @@
+.intro {
+    margin-bottom: 60px;
+    &-introduction {
+        margin-top: 24px;
+        &__title {
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 31px;
+            line-height: 37px;
+
+        }
+        &__text {
+            padding-top: 30px;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 30px;
+            color: $black;
+        }
+        &--pd {
+            padding-top: 20px;
+        }
+    }
+    &-advantages {
+        margin-top: 30px;
+        border-left: 4px solid $border;
+    }
+    &-information {
+        padding-left: 34px;
+        &__number {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-left: 9px;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $darkblue;
+            padding-top: 10px;
+            margin-left: -3px;
+        }
+        &--pd {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    }
+    &-team {
+        margin: 30px -30px;
+        background-color: $lg-grey;
+        background-image: url(../img/photo-team.jpg);
+        height: 114px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        
+        &__text {
+            font-weight: 700;
+            font-size: 37px;
+            line-height: 44px;
+            letter-spacing: 13px;
+            text-transform: uppercase;
+            color: $white;
+            opacity: 0.8;
+            text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+            position: absolute;
+            left: calc(50% - 148px/2);
+            top: calc(50% - 44px/2 - 0.03px);
+        }
+
+    }
+    &-quality {
+        &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $black;
+        }
+        &--pd {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    &__thesis {
+            padding-top: 30px;
+            font-weight: 700;
+            font-size: 31px;
+            line-height: 37px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+}
+@media screen and (min-width:708px) {
+    .intro {
+        &-introduction {
+            margin-top: 63px;
+            &__title {
+                font-size: 40px;
+                line-height: 46px;
+            }
+        }
+        &-advantages {
+            margin-top: 28px;
+        }
+        &-team {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            background-image: url(../img/intro-team-sd.jpg);
+            height: 233.6px;
+            background-size: cover;
+            &__text {
+                font-size: 46px;
+                line-height: 56px;
+                letter-spacing: 63px;
+                left: calc(50% - 328px/2);
+                top: calc(50% - 56px/2 + 0.2px);
+            }
+        }
+        &__thesis {
+                font-size: 39px;
+                line-height: 46px;
+            }
+    }
+}
+@media screen and (min-width:850px) {
+    .intro {
+        display: grid;
+        grid-template-columns: 57% 43%;
+        // grid-column-gap: 30px;
+        margin-top: 31px;
+        &-introduction {
+            margin-top: 28px;
+            padding-right: 30px;
+            &__title {
+                font-size: 39px;
+            }   
+        }
+        &-advantages {
+            border: none;
+        }
+        &-information {
+            border-left: 4px solid $border;
+        }
+        &-team {
+            grid-column: 1 / -1;
+            margin-top: 56px;
+            background-image: url(../img/intro-team-hd.jpg);
+            height: 311.5px;
+            &__text {
+                font-size: 87px;
+                line-height: 105px;
+                letter-spacing: 63px;
+                left: calc(50% - 448px/2);
+                top: calc(50% - 105px/2 - 0.23px);
+            }
+        }
+        &__thesis {
+            padding-top: 0;
+            padding-left: 28px;
+        }
+        &-quality {
+            padding-right: 30px;
+        }
+}}
+@media screen and (min-width:992px) {
+    .intro {
+        margin-top: 28px;
+        padding-left: 120px;
+        padding-right: 120px;
+        grid-template-columns: 64.3% 35.7%;
+        &-information {
+            &__text {
+                font-size: 15px;
+                margin-left: -6px;
+            }
+        }
+        &-team {
+            grid-column: 1 / -1;
+            margin-top: 56px;
+            height: 438px;
+            margin: 59px -150px;
+            &__text {
+                font-size: 98px;
+                line-height: 117px;
+                letter-spacing: 63px;
+                left: calc(50% - 478px/2);
+                top: calc(50% - 117px/2 + 2.5px);
+            }
+
+        }
+    }
+}

@@ -1,48 +1,59 @@
 .footer {
     &--fon {
-    background-color: $greyfon;
-    }
+    background-color: $greyfon;}
     padding: 30px 0;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    &__address {
+    &-top {
+        &__address {
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
         color: $darkblue;
-        padding-top: 30px;
-        border-top: 2px solid $border;
+        }
+        &__map {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $blue;
+            text-decoration: none;
+            padding-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        &__auth {
+            display: none;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: $date;
+            text-transform: uppercase;
+        }
     }
-    &__map {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: $blue;
-        margin-top: 10px;
-        margin-bottom: 21px;
-        text-decoration: none;
-    }
-    &__fb {
+    &-bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        &__fb {
         margin-bottom: 7px;
-    }
-    &__tel {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        color: $tell;
-        text-decoration: none;
-        margin-bottom: 10px;
-    }
-    &__mail {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        color: $blue;
-        text-decoration: none;
-        margin-bottom: 30px;
+        }
+        &__tel {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $tell;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        &__mail {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $blue;
+            text-decoration: none;
+            margin-bottom: 30px;
+        }
     }
     &__auth {
         font-weight: 400;
@@ -50,5 +61,76 @@
         line-height: 20px;
         color: $date;
         text-transform: uppercase;
+    }
+}
+@media screen and (min-width:708px) {
+    .footer {
+        text-align: left;
+        margin: 0 124px;
+        &-top {
+            display: flex;
+            align-items: center;
+            &__map {
+                padding: 0;
+                margin-left: -4px;
+            }
+            &__map::before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                background: $date;
+                border-radius: 50%;
+                width: 6px;
+                height: 6px;
+                margin: 0 11px;
+            }
+        }
+        &-bottom {
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 27px;
+            & a {
+                margin: 0;
+            }
+            &__tel::before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            background: $date;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            margin: 0 11px;
+            }
+            &__tel::after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            background: $date;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            margin: 0 11px;
+            }
+        }
+        &__auth {
+            padding-left: 64px;
+        }
+    }}
+@media screen and (min-width:850px) {
+    .footer {
+        margin: 0;
+        &-bottom {
+            margin-bottom: 0;
+        }
+        &-top {
+            &__auth {
+                display: block;
+                margin-left: auto;
+            }
+        }
+        &__auth {
+            display: none;
+        }
     }
 }
