@@ -72,7 +72,6 @@
             left: calc(50% - 148px/2);
             top: calc(50% - 44px/2 - 0.03px);
         }
-
     }
     &-quality {
         &__text {
@@ -87,15 +86,14 @@
         }
     }
     &__thesis {
-            padding-top: 30px;
-            font-weight: 700;
-            font-size: 31px;
-            line-height: 37px;
-            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
+        padding-top: 30px;
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 @media screen and (min-width:708px) {
     .intro {
@@ -116,17 +114,17 @@
             height: 233.6px;
             background-size: cover;
             &__text {
-                font-size: 46px;
-                line-height: 56px;
-                letter-spacing: 63px;
-                left: calc(50% - 328px/2);
-                top: calc(50% - 56px/2 + 0.2px);
+            font-size: 46px;
+            line-height: 56px;
+            letter-spacing: 63px;
+            left: calc(50% - 328px/2);
+            top: calc(50% - 56px/2 + 0.2px);
             }
         }
         &__thesis {
-                font-size: 39px;
-                line-height: 46px;
-            }
+            font-size: 39px;
+            line-height: 46px;
+        }
     }
 }
 @media screen and (min-width:850px) {
@@ -168,7 +166,8 @@
         &-quality {
             padding-right: 30px;
         }
-}}
+    }
+}
 @media screen and (min-width:992px) {
     .intro {
         margin-top: 28px;
@@ -193,7 +192,6 @@
                 left: calc(50% - 478px/2);
                 top: calc(50% - 117px/2 + 2.5px);
             }
-
         }
     }
 }

@@ -1,38 +1,48 @@
 .information {
     margin-top: 126px;
     margin-bottom: 30px;
+    text-align: center;
     &__text {
         font-weight: 700;
         font-size: 38px;
         line-height: 46px;
         text-align: center;
-        color: #FFFFFF;
+        color: $white;
         margin-bottom: 159px;
     }
     &__link {
-        display: block;
-        text-align: center;
-        
-    }}
+        display: inline-block;
+        vertical-align: top;
+        &:hover path {
+            stroke: $hover;
+        }
+        &:hover circle {
+            stroke: $hover;
+        }
+    }
+}
 @media screen and (min-width:708px) {
-.information {
-    margin-top: 274px;
-    &__text {
-        margin-bottom: 417px;
-        font-size: 40px;
-            
+    .information {
+        margin-top: 271px;
+        &__text {
+            margin-bottom: 417px;
+            font-size: 40px;
+        }
     }
-}}
+}
 @media screen and (min-width:850px){
-.information {
-    margin-top: 245px;
-    &__text {
-        margin-bottom: 289px;}
-    }}
-@media screen and (min-width:992px) {
-.information {
-    margin-top: 255px;
-    &__text {
-        margin-bottom: 307px
+    .information {
+        margin-top: 245px;
+        &__text {
+            margin-bottom: 289px;
+        }
     }
-    }}
+}
+@media screen and (min-width:992px) {
+    .information {
+        margin-top: 258px;
+        &__text {
+            margin-bottom: 307px
+        }
+    }
+}

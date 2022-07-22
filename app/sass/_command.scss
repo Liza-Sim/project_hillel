@@ -21,6 +21,7 @@
         font-size: 14px;
         line-height: 17px;
         letter-spacing: 1px;
+        text-decoration: none;
         }
         &__text {
             font-weight: 700;
@@ -39,14 +40,14 @@
             font-weight: 700;
             font-size: 16px;
             line-height: 20px;
-            color: #B3B3BA;
+            color: $date;
             margin-bottom: 6px;
         }
         &__position {
             font-weight: 400;
             font-size: 14px;
             line-height: 22px;
-            color: #B3B3BA;
+            color: $date;
         }
     }
     &-slider {
@@ -60,12 +61,9 @@
             width: 16px;
             height: 16px;
             margin: 0 7.5px;
-
         }
-
     }
 }
-
 @media screen and (min-width:708px) {
     .command {
     margin-top: 77px;
@@ -75,8 +73,9 @@
                 font-size: 39px;
                 line-height: 46px;
             }
-
-}}}
+        }
+    }
+}
 @media screen and (min-width:850px) {
     .command {
         display: grid;
@@ -95,8 +94,7 @@
         &-slider {
             grid-column: 1 / -1;
         }
-    }
-    
+    }    
 }
 @media screen and (min-width:992px) {
     .command {

@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preload" as="font" href="./fonts/montserrat-v24-latin_cyrillic-500.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-v24-latin_cyrillic-700.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-v24-latin_cyrillic-regular.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
@@ -18,9 +21,9 @@
                     <a href="#">ру</a>
                     <a class="is-active__lang" href="#">en</a>
                 </div>
-                <div class="header-top__addresses header-top--white">Kyiv, Mechnikova str, 14/1</div>
+                <div class="header-top__addresses header-top--white" tabindex="0">Kyiv, Mechnikova str, 14/1</div>
                 <a class="header-top__tel header-top--white" href="tel:+30800211927">0800 211 927</a>
-                <a class="header-top__fb" href="#">
+                <a class="header-top__fb" href="#" aria-label="facebook">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
@@ -38,11 +41,24 @@
                 <span class="header-logo__title">about us</span>
             </div>
             <div class="header-menu">
-                <button class="header-menu__btn button" type="button">
+                <button class="header-menu__btn button" type="button" aria-label="menu">
                     <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 10.5H25" stroke="#323264" stroke-width="2" />
                         <path d="M7 16.5H25" stroke="#323264" stroke-width="2" />
                         <path d="M7 22.5H25" stroke="#323264" stroke-width="2" />
+                    </svg>
+                </button>
+                <ul class="burger" aria-label="close-menu">
+                    <li class="burger-li"><a class="burger-li__link" href="./about.html">about us</a></li>
+                    <li class="burger-li"><a class="burger-li__link" href="#">послуги</a></li>
+                    <li class="burger-li"><a class="burger-li__link" href="#">команда</a></li>
+                    <li class="burger-li"><a class="burger-li__link is-active__menu" href="#">публікаії</a></li>
+                    <li class="burger-li"><a class="burger-li__link" href="#">контакти</a></li>
+                </ul>
+                <button class="burger-close">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                        <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
                     </svg>
                 </button>
                 <ul class="header-menu__list header-menu__list--white">
@@ -142,13 +158,13 @@
                         <img class="achievements-boxes--box4" src="./img/achievements-box4.jpg" alt="Логотип" width="110" height="40">
                     </div>
                 </div>
-                <div class="achievements-slider">
-                    <div class="achievements-slider__circle is-active__slider"></div>
-                    <div class="achievements-slider__circle"></div>
-                    <div class="achievements-slider__circle"></div>
-                    <div class="achievements-slider__circle achievements-slider--desctop"></div>
-                    <div class="achievements-slider__circle achievements-slider--desctop"></div>
-                    <div class="achievements-slider__circle achievements-slider--desctop"></div>
+                <div class="achievements-slider" aria-label="slider">
+                    <div class="achievements-slider__circle is-active__slider" tabindex="0"></div>
+                    <div class="achievements-slider__circle" tabindex="0"></div>
+                    <div class="achievements-slider__circle" tabindex="0"></div>
+                    <div class="achievements-slider__circle achievements-slider--desctop" tabindex="0"></div>
+                    <div class="achievements-slider__circle achievements-slider--desctop" tabindex="0"></div>
+                    <div class="achievements-slider__circle achievements-slider--desctop" tabindex="0"></div>
                 </div>
             </div>
 
@@ -156,14 +172,14 @@
     </main>
     <footer class="footer--fon">
         <div class="container">
-            <div class="footer">
+            <div class="footer footer--white">
                 <div class="footer-top">
-                    <p class="footer-top__address">Kyiv, Mechnikova str., 14/1</p>
+                    <p class="footer-top__address" tabindex="0">Kyiv, Mechnikova str., 14/1</p>
                     <a class="footer-top__map" href="#">On map</a>
                     <p class="footer-top__auth">© 2021 hlegal law company, llc</p>
                 </div>
                 <div class="footer-bottom">
-                    <a class="footer-bottom__fb" href="#">
+                    <a class="footer-bottom__fb" aria-label="facebook" href="#">
                         <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
@@ -171,7 +187,7 @@
                         </svg>
                     </a>
                     <a class="footer-bottom__tel" href="tel:+380800211927">0800 211 927</a>
-                    <a class="footer-bottom__mail" href="mail:contact@forstudy.space">contact@forstudy.space</a>
+                    <a class="footer-bottom__mail" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
                 </div>
                 <p class="footer__auth">© 2021 hlegal law company, llc</p>
             </div>

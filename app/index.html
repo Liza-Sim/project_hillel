@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preload" as="font" href="./fonts/montserrat-v24-latin_cyrillic-500.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-v24-latin_cyrillic-700.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-v24-latin_cyrillic-regular.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -18,9 +21,9 @@
                             <a href="#">ру</a>
                             <a class="is-active__lang" href="#">en</a>
                         </div>
-                        <div class="header-top__addresses">Kyiv, Mechnikova str, 14/1</div>
+                        <div class="header-top__addresses" tabindex="0">Kyiv, Mechnikova str, 14/1</div>
                         <a class="header-top__tel" href="tel:+30800211927">0800 211 927</a>
-                        <a class="header-top__fb" href="#">
+                        <a class="header-top__fb" aria-label="Facebook" href="#">
                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
@@ -32,11 +35,24 @@
                         <a href="./index.html"><img class="header-logo__img" src="./img/logo.svg" alt="Логотип"></a>
                     </div>
                     <div class="header-menu">
-                        <button class="header-menu__btn button" type="button">
+                        <button class="header-menu__btn button" type="button" aria-label="menu">
                             <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 10.5H25" stroke="white" stroke-width="2" />
                                 <path d="M7 16.5H25" stroke="white" stroke-width="2" />
                                 <path d="M7 22.5H25" stroke="white" stroke-width="2" />
+                            </svg>
+                        </button>
+                        <ul class="burger">
+                            <li class="burger-li"><a class="burger-li__link" href="./about.html">about us</a></li>
+                            <li class="burger-li"><a class="burger-li__link" href="#">послуги</a></li>
+                            <li class="burger-li"><a class="burger-li__link" href="#">команда</a></li>
+                            <li class="burger-li"><a class="burger-li__link is-active__menu" href="#">публікаії</a></li>
+                            <li class="burger-li"><a class="burger-li__link" href="#">контакти</a></li>
+                        </ul>
+                        <button class="burger-close" aria-label="close">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
                             </svg>
                         </button>
                         <ul class="header-menu__list">
@@ -51,7 +67,7 @@
                 </header>
                 <div class="information">
                     <p class="information__text">you legal solutions provider</p>
-                    <a class="information__link" href="#">
+                    <a class="information__link" href="#servic" aria-label="button-servic">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_dd_22728_12366)">
                                 <circle opacity="0.5" cx="25" cy="21" r="20" stroke="white" stroke-width="2" />
@@ -86,10 +102,10 @@
         </div>
         <div class="menu container">
             <nav class="menu-nav">
-                <button class="menu-nav__btn is-active__text" type="button">Consistent</button>
-                <button class="menu-nav__btn" type="button">Customer oriented</button>
-                <button class="menu-nav__btn" type="button">Innovative</button>
-                <button class="menu-nav__btn" type="button">Business oriented</button>
+                <button class="menu-nav__btn is-active__text" type="button" tabindex="0">Consistent</button>
+                <button class="menu-nav__btn" type="button" tabindex="0">Customer oriented</button>
+                <button class="menu-nav__btn" type="button" tabindex="0">Innovative</button>
+                <button class="menu-nav__btn" type="button" tabindex="0">Business oriented</button>
             </nav>
             <div class="menu-information">
                 <h2 class="menu-information__title">We turn the idea of legal services</h2>
@@ -99,7 +115,7 @@
             </div>
         </div>
         <div class="services container">
-            <a class="services__link" href="#">Services
+            <a class="services__link" href="#" id="servic">Services
                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
                 </svg>
@@ -370,13 +386,17 @@
         <section class="command container">
             <img class="command__img img-responsive" src="./img/man.jpg" alt="Рисунок">
             <div class="command-information">
-                <a class="command-information__link" href="#">команда</a>
+                <a class="command-information__link" href="#">команда
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
+                    </svg>
+                </a>
                 <p class="command-information__text">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
                 безсилі.</p>
                 <p class="command-information__name">Олександр Олександровський</p>
                 <p class="command-information__position">Керуючий партнер</p>
             </div>
-            <div class="command-slider">
+            <div class="command-slider" aria-label="slider">
                 <div class="command-slider__circle is-active__slider"></div>
                 <div class="command-slider__circle"></div>
                 <div class="command-slider__circle"></div>
@@ -469,11 +489,11 @@
         <div class="container">
             <div class="footer">
                 <div class="footer-top">
-                    <p class="footer-top__address">Kyiv, Mechnikova str., 14/1</p>
+                    <p class="footer-top__address" tabindex="0">Kyiv, Mechnikova str., 14/1</p>
                     <a class="footer-top__map" href="#">On map</a>
                     <p class="footer-top__auth">© 2021 hlegal law company, llc</p>
                 </div>
-                <div class="footer-bottom">
+                <div class="footer-bottom" aria-label="facebook">
                     <a class="footer-bottom__fb" href="#">
                         <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path

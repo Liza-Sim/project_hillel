@@ -1,7 +1,6 @@
 .achievements {
     background-color: $greyfon;
     padding-top: 30px;
-    
     &__title {
         font-weight: 700;
         font-size: 14px;
@@ -19,13 +18,12 @@
             justify-content: center;
             align-items: center;
             height: 90px;
-            background: #FFFFFF;
+            background: $white;
             border-radius: 12px;
         }
         &--desctop {
             display: none;
         }
-
     }
     &-slider {
         display: flex;
@@ -39,11 +37,9 @@
             width: 16px;
             height: 16px;
             margin: 0 7.5px;
-
         }
     }
 }
-
 @media screen and (min-width:708px) {
     .achievements {
         &-boxes {
@@ -71,7 +67,6 @@
 @media screen and (min-width:850px) {
     .achievements {
         &-boxes {
-            
             &__box {
                 width: 196px;
                 height: 110px;
@@ -92,9 +87,9 @@
                 width: 166px;
                 height: 60px;
             }
-
+        }
     }
-}}
+}
 @media screen and (min-width:992px) {
     .achievements {
         &__title {

@@ -1,7 +1,9 @@
 .footer {
     &--fon {
-    background-color: $greyfon;}
-    padding: 30px 0;
+    background-color: $greyfon;
+    }
+    padding-top: 62px;
+    padding-bottom: 30px;
     text-align: center;
     &-top {
         &__address {
@@ -37,6 +39,9 @@
         margin-top: 20px;
         &__fb {
         margin-bottom: 7px;
+        &:hover path {
+            fill: $hover;
+        }
         }
         &__tel {
             font-weight: 700;
@@ -53,6 +58,8 @@
             color: $blue;
             text-decoration: none;
             margin-bottom: 30px;
+            &:hover {
+                color: $hover;}
         }
     }
     &__auth {
@@ -62,6 +69,9 @@
         color: $date;
         text-transform: uppercase;
     }
+    &--white {
+        padding-top: 30px;
+    } 
 }
 @media screen and (min-width:708px) {
     .footer {
@@ -116,10 +126,12 @@
         &__auth {
             padding-left: 64px;
         }
-    }}
+    }
+}
 @media screen and (min-width:850px) {
     .footer {
         margin: 0;
+        padding-top: 32px;
         &-bottom {
             margin-bottom: 0;
         }
@@ -134,3 +146,5 @@
         }
     }
 }
+
+

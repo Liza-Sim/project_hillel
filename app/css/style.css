@@ -116,6 +116,10 @@
   color: #B3B3BA;
 }
 
+.header-top__lang--white a:hover {
+  background-color: #F5F5FA;
+}
+
 .header-top__addresses {
   display: none;
   font-weight: 400;
@@ -139,6 +143,10 @@
 
 .header-top--white {
   color: #B3B3BA;
+}
+
+.header-top__fb:hover path {
+  fill: #F0145A;
 }
 
 .header-logo {
@@ -166,12 +174,6 @@
   height: 26px;
   position: absolute;
   left: 73px;
-}
-
-.header-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .header-menu__list {
@@ -202,10 +204,16 @@
   color: #24A3FF;
 }
 
+.header-menu__btn {
+  margin-top: 12px;
+}
+
+.header-menu__btn:active {
+  background-color: #B3B3BA;
+  border-radius: 8px;
+}
+
 @media screen and (min-width: 708px) {
-  .header-top__fb {
-    display: block;
-  }
   .header {
     margin: 0;
     display: grid;
@@ -221,6 +229,9 @@
             justify-content: flex-start;
     grid-column: 1 / -1;
     padding: 48px 0 30px;
+  }
+  .header-top__fb {
+    display: block;
   }
   .header-top__addresses {
     display: block;
@@ -314,6 +325,9 @@
     width: 132px;
   }
   .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -407,6 +421,7 @@
 .information {
   margin-top: 126px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .information__text {
@@ -419,13 +434,21 @@
 }
 
 .information__link {
-  display: block;
-  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.information__link:hover path {
+  stroke: #F0145A;
+}
+
+.information__link:hover circle {
+  stroke: #F0145A;
 }
 
 @media screen and (min-width: 708px) {
   .information {
-    margin-top: 274px;
+    margin-top: 271px;
   }
   .information__text {
     margin-bottom: 417px;
@@ -444,7 +467,7 @@
 
 @media screen and (min-width: 992px) {
   .information {
-    margin-top: 255px;
+    margin-top: 258px;
   }
   .information__text {
     margin-bottom: 307px;
@@ -480,6 +503,7 @@
   background-color: transparent;
   white-space: nowrap;
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .menu-nav__btn:last-child {
@@ -751,6 +775,7 @@
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .command-information__text {
@@ -997,7 +1022,7 @@
      object-fit: cover;
   padding-bottom: 27px;
   width: 100%;
-  height: 200px;
+  height: 227px;
 }
 
 .publications-box__title {
@@ -1076,10 +1101,25 @@
     -o-object-fit: fill;
        object-fit: fill;
   }
+  .publications-box:last-child {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+  .publications__title {
+    font-size: 39px;
+    line-height: 43px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .publications-box {
+    padding-bottom: 7px;
+  }
 }
 
 .footer {
-  padding: 30px 0;
+  padding-top: 62px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -1131,6 +1171,10 @@
   margin-bottom: 7px;
 }
 
+.footer-bottom__fb:hover path {
+  fill: #F0145A;
+}
+
 .footer-bottom__tel {
   font-weight: 700;
   font-size: 16px;
@@ -1149,12 +1193,20 @@
   margin-bottom: 30px;
 }
 
+.footer-bottom__mail:hover {
+  color: #F0145A;
+}
+
 .footer__auth {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: #B3B3BA;
   text-transform: uppercase;
+}
+
+.footer--white {
+  padding-top: 30px;
 }
 
 @media screen and (min-width: 708px) {
@@ -1225,6 +1277,7 @@
 @media screen and (min-width: 850px) {
   .footer {
     margin: 0;
+    padding-top: 32px;
   }
   .footer-bottom {
     margin-bottom: 0;
@@ -1556,6 +1609,57 @@
   }
 }
 
+.burger {
+  display: none;
+  width: 96%;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 12px 12px 0px 0px;
+  text-align: center;
+  list-style-type: none;
+  left: 0;
+  top: 96px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  padding: 12px;
+  padding-top: 49px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.burger-li {
+  width: 100%;
+  background-color: #F5F5FA;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.burger-li__link {
+  display: inline-block;
+  vertical-align: baseline;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #24A3FF;
+  text-decoration: none;
+  padding: 7px 0;
+}
+
+.burger-li:active {
+  background-color: #E6E6F0;
+}
+
+.burger-close {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 107px;
+}
+
 .is-active__lang {
   background: #F0145A;
   border-radius: 8px;
@@ -1569,6 +1673,10 @@
 
 .is-active__slider {
   background-color: #24A3FF;
+}
+
+.is-active__menu {
+  color: #F0145A;
 }
 
 /*# sourceMappingURL=style.css.map */

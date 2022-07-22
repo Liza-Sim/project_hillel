@@ -19,7 +19,7 @@
                 line-height: 15px;
                 text-align: center;
                 letter-spacing: 1px;
-                color: #FFFFFF;
+                color: $white;
                 padding: 5px 8px;
             }
             & a:hover {
@@ -29,6 +29,9 @@
             &--white a {
                 color: $date;
             }
+            &--white a:hover {
+                background-color: $greyfon;
+            }
         }
         &__addresses{
             display: none;
@@ -36,19 +39,22 @@
         font-size: 16px;
         line-height: 20px;
         text-align: right;
-        color: #FFFFFF;}
+        color: $white;}
 
         &__tel {
             font-weight: 700;
             font-size: 16.5px;
             line-height: 20px;
-            color: #FFFFFF;
+            color: $white;
             text-decoration: none;
         }
         &__fb {
             display: none;}
         &--white {
             color: $date;
+        }
+        &__fb:hover path {
+            fill: $hover;
         }
     }
     &-logo {
@@ -73,10 +79,8 @@
             position: absolute;
             left: 73px;
         }
-
     }
     &-menu {
-        display: flex;
         &__list {
         display: none;
         list-style-type: none;
@@ -88,7 +92,7 @@
                 font-size: 16px;
                 line-height: 20px;
                 text-align: right;
-                color: #FFFFFF;
+                color: $white;
                 border-bottom: 2px solid transparent;
             }
             & a:hover {
@@ -99,14 +103,17 @@
                 color:$blue;
             }
         }
+        &__btn {
+            margin-top: 12px;
+        }
+        &__btn:active {
+            background-color: $date;
+            border-radius: 8px;
+
+        }
     }
 }
-
 @media screen and (min-width:708px) {
-
-    .header-top__fb {
-        display: block;
-    }
     .header {
         margin: 0;
         display: grid;
@@ -114,6 +121,9 @@
         grid-template-columns: 1fr;
         
             &-top {
+                &__fb {
+                    display: block;
+                }
                 display: flex;
                 justify-content: flex-start;
                 grid-column: 1 / -1;
@@ -125,7 +135,7 @@
                     content: "";
                     display: inline-block;
                     vertical-align: middle;
-                    background: #E6E6F0;
+                    background: $border;
                     border-radius: 50%;
                     width: 6px;
                     height: 6px;
@@ -135,7 +145,7 @@
                     content: "";
                     display: inline-block;
                     vertical-align: middle;
-                    background: #E6E6F0;
+                    background: $border;
                     border-radius: 50%;
                     width: 6px;
                     height: 6px;
@@ -145,7 +155,7 @@
                     content: "";
                     display: inline-block;
                     vertical-align: middle;
-                    background: #E6E6F0;
+                    background: $border;
                     border-radius: 50%;
                     width: 6px;
                     height: 6px;
@@ -162,8 +172,7 @@
                     & a {
                         margin-right: 18px;
                     }
-                }
-                
+                }  
             }
             &-logo {
                 margin-top: 0;
@@ -184,11 +193,8 @@
                     left: 159px;
                 }   
             }
-
-
-
-}
-}
+        }
+    }
 @media screen and (min-width:850px) {
     .header {
         display: grid;
@@ -211,6 +217,7 @@
                 width: 132px;
         }}
         &-menu {
+            display: flex;
             justify-content: flex-end;
             &__list {
                 & a {
@@ -221,9 +228,8 @@
         }
     }   
 }
-
 @media screen and (min-width:992px) {
-     .header {
+    .header {
         display: grid;
         grid-template-rows: repeat(2, min-content);
         grid-template-columns: 1fr auto;
@@ -244,6 +250,4 @@
             }
         }
     }
-
-
 }

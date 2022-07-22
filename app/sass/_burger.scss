@@ -1,0 +1,45 @@
+.burger {
+    display: none;
+    width: 96%;
+    position: absolute;
+    background: $white;
+    border-radius: 12px 12px 0px 0px;
+    text-align: center;
+    list-style-type: none;
+    left: 0;
+    top: 96px;
+    padding-inline-start: 0;
+    padding: 12px;
+    padding-top: 49px;
+    margin-left: 2%;
+    margin-right: 2%;
+    &-li {
+        width: 100%;
+        background-color: $greyfon;
+        border-radius: 12px;
+        margin-top: 15px;
+        &__link {
+            display: inline-block;
+            vertical-align: baseline;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: $blue;
+            text-decoration: none;
+            padding: 7px 0;
+        }
+        &:active {
+            background-color: $border;
+        }
+    }
+    &-close {
+        display: none;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        position: absolute;
+        right: 20px;
+        top: 107px;
+    }
+}

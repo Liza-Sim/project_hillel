@@ -4,7 +4,7 @@
     position: relative;
     &::after {
         content: '';
-        background: #CACADB;
+        background: $after;
         border-radius: 0px 0px 12px 12px;
         height: 10px;
         position: absolute;
@@ -14,12 +14,11 @@
     }
     &::before {
         content: '';
-        background: #E7E7F2;;
+        background: $before;
         border-radius: 0px 0px 12px 12px;
         height: 20px;
         position: absolute;
         left: 40px;
-        // width: calc(100%-80px);
         right: 40px;
         bottom: -20px;
     }
@@ -30,25 +29,29 @@
     height: 600px;
     background-size: cover;
     background-position: center top;
-}}
+    }
+}
 
 @media screen and (min-width:708px) {
-.fon {
-    &__img {
-        height: 1024px;
+    .fon {
+        &__img {
+            height: 1024px;
+        }
     }
-}}
+}
 @media screen and (min-width:850px) {
-.fon {
-    &__img {
-        height: 768px;
-        background-size: 69.5%;
+    .fon {
+        &__img {
+            height: 768px;
+            background-size: 69.5%;
+        }
     }
-}}
+}
 @media screen and (min-width:992px) {
-.fon {
-    &__img {
-    background-size: 51%;
-    height: 799px;
+    .fon {
+        &__img {
+        background-size: 51%;
+        height: 799px;
+        }
     }
-}}
+}
