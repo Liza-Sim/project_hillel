@@ -213,7 +213,7 @@
   border-radius: 8px;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .header {
     margin: 0;
     display: grid;
@@ -398,7 +398,7 @@
   background-position: center top;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .fon__img {
     height: 1024px;
   }
@@ -446,7 +446,7 @@
   stroke: #F0145A;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .information {
     margin-top: 271px;
   }
@@ -530,7 +530,7 @@
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .menu-nav {
     margin-right: -30px;
     padding-top: 30px;
@@ -675,7 +675,7 @@
   padding-bottom: 29px;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -734,7 +734,7 @@
   margin: 0 -15px;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .fon-header {
     background-color: transparent;
     margin: 0;
@@ -826,7 +826,7 @@
   margin: 0 7.5px;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .command {
     margin-top: 77px;
     -o-object-fit: cover;
@@ -948,7 +948,7 @@
   display: none;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .company {
     display: grid;
     grid-template-rows: repeat(-webkit-min-content 120px 120px 120px 120px);
@@ -1061,7 +1061,7 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .publications {
     display: grid;
     grid-template-rows: repeat(4, -webkit-min-content);
@@ -1209,7 +1209,7 @@
   padding-top: 30px;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .footer {
     text-align: left;
     margin: 0 124px;
@@ -1399,7 +1399,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .intro-introduction {
     margin-top: 63px;
   }
@@ -1555,7 +1555,7 @@
   margin: 0 7.5px;
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 768px) {
   .achievements-boxes {
     display: grid;
     grid-template-rows: 1fr;
